@@ -1,7 +1,17 @@
+<div class="header">
+  <h1>Cards</h1>
+</div>
+
 <div class="cards-container">
   <app-card color="color-1"></app-card>
   <app-card color="color-2"></app-card>
   <app-card color="color-3"></app-card>
   <app-card color="color-4"></app-card>
+</div>
+
+<div class="buttons-container">
+  <app-button text="Cover All" btnClass="style-1" (click)="flipAllToBack()"></app-button>
+  <app-button text="Uncover All" btnClass="style-1" (click)="flipAllToFront()"></app-button>
+  <app-button text="Flip All" btnClass="style-1" (click)="flipAllCards()"></app-button>
 </div>
 

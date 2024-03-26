@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, QueryList, ViewChildren} from '@angular/core';
+import {CardComponent} from "./card/card.component";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cards-display';
+
+  @ViewChildren(CardComponent) cards!: QueryList<CardComponent>;
+
+  flipAllCards() {
+    this.cards.forEach(card => {
+      card.flip();
+    });
+  }
+
+  flipAllToFront() {
+    this.cards.forEach(card => {
+      card.flipToFront();
+    });
+  }
+
+  flipAllToBack() {
+    this.cards.forEach(card => {
+      card.flipToBack();
+    });
+  }
 }
