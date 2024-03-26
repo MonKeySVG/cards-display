@@ -1,0 +1,48 @@
+.shadow {
+  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.symbol-container {
+  width: 10vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+
+}
+
+.symbol-out {
+  transform: rotate(45deg);
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5vw;
+
+}
+
+.symbol-in {
+  width: 80%;
+  height: 80%;
+  border-radius: 1.2vw;
+
+}
+
+.color-1 {
+  background-color: red;
+}
+
+.color-2 {
+  background-color: blue;
+}
+
+.color-3 {
+  background-color: green;
+}
+
+.color-4 {
+  background-color: yellow;
+}
