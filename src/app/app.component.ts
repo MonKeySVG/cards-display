@@ -8,7 +8,7 @@ import {CardComponent} from "./card/card.component";
 })
 export class AppComponent {
   title = 'cards-display';
-  randomArray: number[] = [0, 1, 2, 3];
+  cardsColor: number[] = [0, 1, 2, 3];
 
   @ViewChildren(CardComponent) cards!: QueryList<CardComponent>;
 
@@ -33,6 +33,8 @@ export class AppComponent {
   randomizeCards() {
     // Generate an array the size of the number of cards
     // with random numbers from 0 to 3
-     this.randomArray = Array.from({length: this.cards.length}, () => Math.floor(Math.random() * 4));
+     this.cardsColor = Array.from({length: this.cards.length}, () => Math.floor(Math.random() * 4));
   }
+
+  protected readonly toString = toString;
 }
